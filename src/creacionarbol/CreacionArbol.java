@@ -19,9 +19,15 @@ public class CreacionArbol {
 
             }
         }
-        
+
         for (int i = 0; i < inOrden.length; i++) {
-            System.out.println(Arrays.deepToString(arbol[i]));
+            for (int j = 0; j < preOrden.length; j++) {
+                //            System.out.println(Arrays.deepToString(arbol[i]));
+                if (arbol[i][j].equals("1")) {
+                    System.out.println("Nodo Raiz "+inOrden[j]+" "+j);
+                }
+            }
+
         }
 
     }
